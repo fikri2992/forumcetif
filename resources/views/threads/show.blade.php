@@ -25,8 +25,16 @@
         <div class="col-md-8">
         @foreach ($thread->replies as $reply)
             @include('threads.reply')
-            @endforeach
+        @endforeach
         </div>
     </div>
+
+    @if(auth()->check())
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            hellow
+        </div>
+    </div>
+    @endif
 </div>
 @endsection
