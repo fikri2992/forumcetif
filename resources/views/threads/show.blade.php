@@ -32,7 +32,9 @@
     @if(auth()->check())
     <div class="row justify-content-center">
         <div class="col-md-8">
-            hellow
+           <form mehod="POST" action="{{ $thread->path() . /replies }}">
+
+           </form>
         </div>
     </div>
     @endif
